@@ -47,4 +47,19 @@ $(document).ready(function () {
     $(".prev-btn").click(function () {
         changeSlide(-1);
     });
+
+    let mode = 0;
+    var mode_page = $("body");
+    // Thêm sự kiện click cho nút Prev
+    $(".mode-page").click(function () {
+        if (mode == 0) {
+            mode++;
+            mode_page.removeClass("light-mode");
+            mode_page.addClass("dark-mode");
+        } else {
+            mode--;
+            mode_page.removeClass("dark-mode");
+            mode_page.addClass("light-mode");
+        }
+    });
 });

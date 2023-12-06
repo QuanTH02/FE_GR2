@@ -1,7 +1,50 @@
 /* CSS */
+body {
+    background-color: black;
+    color: white;
+}
+
+.dark-mod {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.list-trailer-play, .trailer-play {
+    background-color: black;
+}
+
+.des {
+    color: rgb(214, 214, 214);
+}
+
+.card {
+    background-color: rgb(31, 31, 31);
+}
+
+
+
 .transparent-animate {
     background-color: transparent !important;
     transition: background-color 0.2s ease-in-out;
+    display: none;
+}
+
+.btn-primary {
+    background-color: rgba(60, 60, 60, 1);
+    border: none;
+    margin-left: 0px;
+}
+
+.btn-success {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .img-container {
@@ -80,8 +123,9 @@
     content: none;
 }
 
-.f-fb, .f-ins{
-    color: black;
+.f-fb,
+.f-ins {
+    color: white;
 }
 
 .topic {
@@ -98,4 +142,14 @@
 
 .list-group-item:hover {
     cursor: pointer;
+
+    .fa-play-circle-o {
+        color: blue;
+    }
+}
+
+.play-time {
+    display: flex;
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
 }
